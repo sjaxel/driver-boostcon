@@ -1,4 +1,4 @@
-update=2017-04-22 00:54:31
+update=Sat 22 Apr 2017 06:00:33 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,7 +25,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=../sjaxel-libraries
+LibDir=../kicad-libraries
 [eeschema/libraries]
 LibName1=driver-boostcon-rescue
 LibName2=power

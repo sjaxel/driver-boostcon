@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:driver-boostcon-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:sjaxel
+LIBS:driver-boostcon-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -55,7 +57,7 @@ F 3 "" H 3250 2050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2300 2050 1800 2050
+	2200 2050 1800 2050
 $Comp
 L GNDPWR #PWR07
 U 1 1 58E572BE
@@ -221,16 +223,18 @@ On/Off
 Wire Wire Line
 	1950 2850 1550 2850
 Wire Wire Line
-	2600 2050 3250 2050
+	2700 2050 3250 2050
 $Comp
-L Fuse F?
-U 1 1 58FAAAA5
+L FUSE-RESCUE-driver-boostcon F301
+U 1 1 58FA0415
 P 2450 2050
-F 0 "F?" V 2530 2050 50  0000 C CNN
-F 1 "Fuse" V 2375 2050 50  0000 C CNN
-F 2 "" V 2380 2050 50  0001 C CNN
-F 3 "" H 2450 2050 50  0001 C CNN
+AR Path="/58FA0415" Ref="F301"  Part="1" 
+AR Path="/58DAD94A/58FA0415" Ref="F301"  Part="1" 
+F 0 "F301" H 2550 2100 50  0000 C CNN
+F 1 "FUSE" H 2350 2000 50  0000 C CNN
+F 2 "axel:Littlefuse-holder" H 2450 2050 50  0001 C CNN
+F 3 "" H 2450 2050 50  0000 C CNN
 	1    2450 2050
-	0    1    1    0   
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

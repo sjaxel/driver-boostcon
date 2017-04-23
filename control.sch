@@ -1,34 +1,97 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:sjaxel
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+LIBS:driver-boostcon-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -127,17 +190,6 @@ F 1 "GNDD" H 2550 2000 50  0000 C CNN
 F 2 "" H 2550 2150 50  0000 C CNN
 F 3 "" H 2550 2150 50  0000 C CNN
 	1    2550 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L ATMEGA328-P IC601
-U 1 1 58E658F1
-P 3850 3150
-F 0 "IC601" H 3100 4400 50  0000 L BNN
-F 1 "ATMEGA328-P" H 4250 1750 50  0000 L BNN
-F 2 "Housings_DIP:DIP-28_W7.62mm_Socket" H 3850 3150 50  0001 C CIN
-F 3 "" H 3850 3150 50  0000 C CNN
-	1    3850 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -285,18 +337,7 @@ F 3 "" H 5950 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 3500 6150 3500
-$Comp
-L SW_PUSH SW601
-U 1 1 58E6722A
-P 6450 3500
-F 0 "SW601" H 6600 3610 50  0000 C CNN
-F 1 "SW_PUSH" H 6450 3420 50  0000 C CNN
-F 2 "axel:Button_SMD_6x6mm" H 6450 3500 50  0001 C CNN
-F 3 "" H 6450 3500 50  0000 C CNN
-	1    6450 3500
-	1    0    0    -1  
-$EndComp
+	4850 3500 6250 3500
 $Comp
 L GNDD #PWR035
 U 1 1 58E673C7
@@ -309,9 +350,9 @@ F 3 "" H 6850 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 3650 6850 3500
+	6850 3500 6850 3650
 Wire Wire Line
-	6850 3500 6750 3500
+	6650 3500 6850 3500
 Connection ~ 5650 3500
 Text GLabel 4850 3300 2    60   Input ~ 0
 SDA
@@ -396,10 +437,10 @@ Wire Wire Line
 	8150 2650 8150 2500
 Connection ~ 8150 2500
 $Comp
-L R R604
+L R R606
 U 1 1 58E7CC3E
 P 7750 2750
-F 0 "R604" V 7750 2750 50  0000 C CNN
+F 0 "R606" V 7750 2750 50  0000 C CNN
 F 1 "4.7 kOhm" V 7650 2750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 7680 2750 50  0001 C CNN
 F 3 "" H 7750 2750 50  0000 C CNN
@@ -407,10 +448,10 @@ F 3 "" H 7750 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R605
+L R R607
 U 1 1 58E7CE69
 P 7750 3250
-F 0 "R605" V 7750 3250 50  0000 C CNN
+F 0 "R607" V 7750 3250 50  0000 C CNN
 F 1 "4.7 kOhm" V 7650 3250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 7680 3250 50  0001 C CNN
 F 3 "" H 7750 3250 50  0000 C CNN
@@ -514,10 +555,10 @@ SDA
 Text GLabel 5600 5700 0    60   Input ~ 0
 SCL
 $Comp
-L R R606
+L R R604
 U 1 1 58F9C2E4
 P 5900 5450
-F 0 "R606" V 5980 5450 50  0000 C CNN
+F 0 "R604" V 5980 5450 50  0000 C CNN
 F 1 "4.7k" V 5900 5450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 5830 5450 50  0001 C CNN
 F 3 "" H 5900 5450 50  0000 C CNN
@@ -525,10 +566,10 @@ F 3 "" H 5900 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R607
+L R R605
 U 1 1 58F9C3F0
 P 6100 4800
-F 0 "R607" V 6180 4800 50  0000 C CNN
+F 0 "R605" V 6180 4800 50  0000 C CNN
 F 1 "4.7k" V 6100 4800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 6030 4800 50  0001 C CNN
 F 3 "" H 6100 4800 50  0000 C CNN
@@ -563,4 +604,26 @@ Wire Wire Line
 Connection ~ 5900 4550
 Text HLabel 4850 2900 2    60   Input ~ 0
 CurrentSignalFiltered
+$Comp
+L ATMEGA328P-PU U601
+U 1 1 58FBF215
+P 3850 3150
+F 0 "U601" H 3100 4400 50  0000 L BNN
+F 1 "ATMEGA328P-PU" H 4250 1750 50  0000 L BNN
+F 2 "Housings_DIP:DIP-28_W7.62mm_Socket" H 3850 3150 50  0001 C CIN
+F 3 "" H 3850 3150 50  0001 C CNN
+	1    3850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW601
+U 1 1 58FC01F6
+P 6450 3500
+F 0 "SW601" H 6500 3600 50  0000 L CNN
+F 1 "SW_Push" H 6450 3440 50  0000 C CNN
+F 2 "axel:Button_SMD_6x6mm" H 6450 3700 50  0001 C CNN
+F 3 "" H 6450 3700 50  0001 C CNN
+	1    6450 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

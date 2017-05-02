@@ -420,4 +420,6 @@ Wire Wire Line
 Connection ~ 5850 1900
 Text HLabel 7400 2300 2    60   Input ~ 0
 CurrentSignal
+Text Label 2700 1900 0    60   ~ 0
+PowerVcc
 $EndSCHEMATC

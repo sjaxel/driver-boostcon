@@ -626,4 +626,10 @@ F 3 "" H 6450 3700 50  0001 C CNN
 	1    6450 3500
 	1    0    0    -1  
 $EndComp
+Text Label 5900 3000 0    60   ~ 0
+Vsense
+Text Label 2750 2650 0    60   ~ 0
+AREF
+Text Label 2800 2350 0    60   ~ 0
+AVcc
 $EndSCHEMATC

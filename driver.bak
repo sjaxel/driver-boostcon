@@ -198,7 +198,7 @@ $EndComp
 Wire Wire Line
 	4050 2850 3950 2850
 Wire Wire Line
-	3950 2850 3950 3050
+	3950 2550 3950 3050
 Text HLabel 3300 2750 0    60   Input ~ 0
 SwitchSignal
 Wire Wire Line
@@ -295,9 +295,15 @@ $EndComp
 Wire Wire Line
 	4000 4850 3900 4850
 Wire Wire Line
-	3900 4850 3900 5050
+	3900 4550 3900 5050
 Text HLabel 3250 4750 0    60   Input ~ 0
 PowerSignal
 Wire Wire Line
 	4000 4750 3250 4750
+Wire Wire Line
+	4050 2550 3950 2550
+Connection ~ 3950 2850
+Wire Wire Line
+	4000 4550 3900 4550
+Connection ~ 3900 4850
 $EndSCHEMATC

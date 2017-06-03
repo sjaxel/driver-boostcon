@@ -134,10 +134,6 @@ Text HLabel 1900 1150 0    60   Input ~ 0
 PowerRegulatedOut
 Wire Wire Line
 	1900 1150 2350 1150
-Text HLabel 1900 1300 0    60   Input ~ 0
-GroundRegulatedOut
-Wire Wire Line
-	1900 1300 2350 1300
 Wire Wire Line
 	1800 2250 2450 2250
 Text Label 2900 2050 0    60   ~ 0
@@ -153,17 +149,6 @@ F 1 "RegulatedPWR" H 3150 1150 50  0000 C CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2550 1150 50  0001 C CNN
 F 3 "" H 2550 1150 50  0000 C CNN
 	1    2600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L PowerConnector_01x01 P305
-U 1 1 58F16725
-P 2600 1300
-F 0 "P305" H 2650 1300 50  0000 C CNN
-F 1 "RegulatedGND" H 3150 1300 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2550 1300 50  0001 C CNN
-F 3 "" H 2550 1300 50  0000 C CNN
-	1    2600 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -291,7 +276,7 @@ U 1 1 58FAAAA5
 P 2450 2050
 F 0 "F301" V 2530 2050 50  0000 C CNN
 F 1 "Fuse" V 2375 2050 50  0000 C CNN
-F 2 "axel:Littlefuse-holder" V 2380 2050 50  0001 C CNN
+F 2 "axel:Littlefuse_30mm_M5" V 2380 2050 50  0001 C CNN
 F 3 "" H 2450 2050 50  0001 C CNN
 	1    2450 2050
 	0    1    1    0   

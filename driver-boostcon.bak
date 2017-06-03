@@ -131,7 +131,8 @@ F2 "PowerRegulated" I R 5450 3550 60
 F3 "GroundRegulated" I R 5450 3700 60 
 F4 "PowerDriveSignal" I L 4450 2800 60 
 F5 "SwitchDriveSignal" I L 4450 3100 60 
-F6 "CurrentSignal" I R 5450 2950 60 
+F6 "CurrentSignal+" I R 5450 2950 60 
+F7 "CurrentSignal-" I R 5450 3250 60 
 $EndSheet
 $Sheet
 S 3050 2700 1000 650 
@@ -156,7 +157,7 @@ F2 "GateDriveSignal" I R 2800 2950 60
 F3 "PowerDriveSignal" I R 2800 3250 60 
 F4 "CurrentSetSignal" I L 1700 3100 60 
 F5 "On/Off" I L 1700 3400 60 
-F6 "CurrentSignalFiltered" I L 1700 2800 60 
+F6 "CurrentSignal" I L 1700 2800 60 
 $EndSheet
 $Sheet
 S 4450 4150 1000 550 
@@ -173,15 +174,14 @@ Wire Wire Line
 Wire Wire Line
 	5650 3700 5450 3700
 $Sheet
-S 5850 2700 1000 600 
+S 5850 2700 1000 800 
 U 58DA8E75
 F0 "CurrentSense" 60
 F1 "currensense.sch" 60
-F2 "CurrentSignal" I L 5850 2950 60 
-F3 "CurrentSignalFiltered" I R 6850 3100 60 
+F2 "CurrentSignal+" I L 5850 2950 60 
+F3 "CurrentSignal-" I L 5850 3250 60 
+F4 "CurrentSignal" I R 6850 3100 60 
 $EndSheet
-Wire Wire Line
-	5850 2950 5450 2950
 Wire Wire Line
 	7000 2150 1500 2150
 Wire Wire Line
@@ -238,4 +238,8 @@ Wire Wire Line
 	1400 3400 1700 3400
 Wire Wire Line
 	7000 4550 6900 4550
+Wire Wire Line
+	5850 3250 5450 3250
+Wire Wire Line
+	5450 2950 5850 2950
 $EndSCHEMATC

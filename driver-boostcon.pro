@@ -1,4 +1,4 @@
-update=2017-06-03 23:22:41
+update=2017-06-04 21:09:13
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=../kicad-libraries
+LibDir=../driver-boostcon;../sjaxel-libraries
 [eeschema/libraries]
 LibName1=sjaxel
 LibName2=74xgxx
@@ -119,5 +121,3 @@ LibName89=Xicor
 LibName90=xilinx
 LibName91=zetex
 LibName92=Zilog
-[general]
-version=1
